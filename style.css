@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "roboto", arial, sans-serif;
+}
+
+.content-container {
+  width: 75%;
+  margin: 0px auto;
+}
+
+.first-container {
+  width: 100%;
+  height: 400px;
+  background-image: url(images/hero-section-img.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10px 0px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.main-title {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 36px;
+}
+
+.title-text p {
+  color: white;
+  font-size: 24px;
+}
+
+.discount-badgee {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+  color: white;
+  background-color: red;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.more-button {
+  color: white;
+  background-color: red;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.second-container {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.subtitle-text {
+  color: white;
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+}
+
+.cleaner {
+  width: 30%;
+  position: relative;
+  background-image: url(images/vysavac.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.phone {
+  width: 30%;
+  background-image: url(images/mobil.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.clothes {
+  width: 30%;
+  background-image: url(images/clothes.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 10px;
+}
+
+.third-container {
+  margin-top: 30px;
+  background-color: rgba(172, 255, 47, 0.274);
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
