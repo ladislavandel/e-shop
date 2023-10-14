@@ -20,6 +20,8 @@
   margin: 10px 0px;
   border-radius: 20px;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
 }
 
 .title-text {
@@ -28,10 +30,11 @@
   left: 20px;
 }
 
-.main-title {
+.main-title-bota {
   color: white;
   margin-bottom: 10px;
   font-size: 36px;
+  padding-right: 10px;
 }
 
 .title-text p {
@@ -71,10 +74,11 @@
 
 .second-container {
   display: flex;
-  height: 300px;
   width: 100%;
   margin-top: 30px;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .subtitle-text {
@@ -82,36 +86,40 @@
   position: absolute;
   bottom: 60px;
   left: 20px;
+  padding-right: 10px;
 }
 
 .cleaner {
-  width: 30%;
+  width: 400px;
   position: relative;
   background-image: url(images/vysavac.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
+  height: 300px;
 }
 
 .phone {
-  width: 30%;
+  width: 400px;
   background-image: url(images/mobil.png);
   background-position: center;
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
   border-radius: 10px;
+  height: 300px;
 }
 
 .clothes {
-  width: 30%;
+  width: 400px;
   background-image: url(images/clothes.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   border-radius: 10px;
+  height: 300px;
 }
 
 .third-container {
@@ -120,4 +128,64 @@
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .first-container {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+  }
+
+  .title-text {
+    position: absolute;
+    left: 20px;
+  }
+
+  .main-title-bota {
+    font-size: 32px;
+  }
+
+  .discount-badgee {
+    display: none;
+  }
+
+  .second-container {
+    height: 1000px;
+  }
+
+  .cleaner {
+    width: 100%;
+    height: 30%;
+  }
+
+  .phone {
+    width: 100%;
+    height: 30%;
+  }
+
+  .clothes {
+    width: 100%;
+    height: 30%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .second-container {
+    gap: 16px;
+  }
+
+  .cleaner {
+    width: 100%;
+  }
+
+  .phone {
+    width: 100%;
+  }
+
+  .clothes {
+    width: 100%;
+  }
 }
